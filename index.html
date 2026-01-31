@@ -456,10 +456,10 @@
     <div class="ui-layer">
         <div id="screen-intro" class="glass-panel active">
             <i class="fa-solid fa-cube" style="font-size: 4rem; color: var(--primary); margin-bottom: 20px; animation: float 3s infinite ease-in-out;"></i>
-            <h1>CRYSTALLINE</h1>
-            <h2>3D Cognitive Architecture</h2>
-            <p>A procedural evaluation of your neural archetypes through 16 situational constructs. This engine renders your psychological profile in real-time.</p>
-            <button class="btn" onclick="startQuiz()">Begin Simulation</button>
+            <h1>MBTITESTS - MBTI 테스트</h1>
+            <h2>Test your personality type</h2>
+            <p>A procedural evaluation of your neural archetypes through 16 situational constructs. This web renders your psychological profile in real-time.</p>
+            <button class="btn" onclick="startQuiz()">Begin Testing</button>
         </div>
 
         <div id="screen-quiz" class="glass-panel">
@@ -509,8 +509,7 @@
     <script>
         const DB_KEY = 'crystalline_light_v2';
         const COOKIE_KEY = 'crystalline_consent_v1';
-
-        // 16 questions - 4 per dimension
+        
         const questions = [
             { t: "After a chaotic week of deadlines and meetings, you finally have a free evening. You choose to:", d: 'EI', o: [{l: "Retreat to your sanctuary to recharge alone.", i: "fa-book-open-reader", v: -1}, {l: "Call friends to debrief over drinks.", i: "fa-champagne-glasses", v: 1}] },
             { t: "In a strategy meeting, you are the person who usually:", d: 'EI', o: [{l: "Absorbs information and speaks last.", i: "fa-ear-listen", v: -1}, {l: "Thinks out loud and drives the discussion.", i: "fa-microphone", v: 1}] },
